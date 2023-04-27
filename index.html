@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -27,6 +28,17 @@
           <a href="./index.html" class="header-logo link"
             >Web<span class="studio-logo">Studio</span></a
           >
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            .js-open-menu
+          >
+            <svg class="menu-hamburger-btn" width="32" height="22">
+              <use href="./images/icons/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-link link current">Studio</a>
@@ -59,10 +71,10 @@
       <!-------------------------- Effective Solutions
         for Your Business -------------------------->
       <section class="solutions">
-        <div class="container">
+        <div class="solutions-wrap container">
           <h1 class="solutions-main-title">
-            Effective Solutions <br />
-            for Your Business
+            Effective Solutions
+            <p>For Your Business</p>
           </h1>
           <button type="button" class="main-title-btn button" data-modal-open>
             Order Service
@@ -494,6 +506,73 @@
         </div>
       </div>
     </footer>
+    <!-------------------------- Backdrop menu-------------------------->
+    <div class="backdrop-menu" .js-menu-container>
+      <div class="modal-menu">
+        <button type="button" class="modal-menu-close-btn" .js-close-menu>
+          <svg class="modal-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="modal-header-list list">
+          <li class="modal-header-item">
+            <a href="./index.html" class="modal-header-link link">Studio</a>
+          </li>
+          <li class="modal-header-item">
+            <a href="./portfolio.html" class="modal-header-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="modal-header-item">
+            <button type="button" class="modal-menu-open-btn" data-modal-open>
+              <a href="" class="modal-header-link link">Contacts</a>
+            </button>
+          </li>
+        </ul>
+        <div class="modal-address-info list">
+          <a href="tel:+110001111111" class="modal-address-phone-item link"
+            >+11 (000) 111-11-11</a
+          >
+          <a
+            href="mailto:info@devstudio.com"
+            class="modal-address-mail-item link"
+            >info@devstudio.com</a
+          >
+        </div>
+        <div class="modal-social-wrap">
+          <ul class="soc-networks-list list">
+            <li class="soc-networks-item">
+              <a class="soc-link link" href="">
+                <svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href="">
+                <svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href=""
+                ><svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href=""
+                ><svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-------------------------- Backdrop-------------------------->
     <div class="backdrop is-hidden" data-modal>
@@ -592,5 +671,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
