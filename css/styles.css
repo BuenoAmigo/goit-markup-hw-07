@@ -109,6 +109,7 @@ body {
 .header {
   background-color: var(--wtite-color);
   align-content: center;
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
@@ -116,9 +117,10 @@ body {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 /* .header-navigation {
