@@ -40,8 +40,18 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="menu-header-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger-btn" width="32" height="22">
+            <use href="./images/icons/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-address">
-          <ul class="address-info list">
+          <ul class="address-info-item list">
             <li>
               <a href="mailto:info@devstudio.com" class="address-info-item link"
                 >info@devstudio.com</a
@@ -54,17 +64,82 @@
             </li>
           </ul>
         </address>
-        <div class="header-btn-wrap">
-          <button
-            type="button"
-            class="menu-header-btn button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="menu-hamburger-btn" width="32" height="22">
-              <use href="./images/icons/sprite.svg#icon-burger"></use>
+      </div>
+      <!-------------------------- Mobile menu -------------------------->
+      <div class="mobile-menu visually-hidden js-menu-container">
+        <div class="mobile-menu-top">
+          <button type="button" class="close-menu-btn js-close-menu">
+            <svg class="close-menu-btn-icon" width="8" height="8">
+              <use href="./images/icons/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <ul class="mobile-header-list list">
+            <li class="mobile-header-item">
+              <a
+                href="./index.html"
+                class="mobile-header-link link link-studio-active link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-header-item">
+              <a
+                href="./portfolio.html"
+                class="mobile-header-link link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-header-item">
+              <a href="" class="mobile-header-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-bottom">
+          <ul class="mobile-address-list list">
+            <li class="mobile-address-item">
+              <a class="mobile-address-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-item">
+              <a
+                class="mobile-address-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-soc-networks-list list">
+            <li class="soc-networks-item">
+              <a class="soc-link link" href="">
+                <svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href="">
+                <svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href=""
+                ><svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-networks-item">
+              <a class="soc-link link" href=""
+                ><svg class="soc-networks-icon" width="16" height="16">
+                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -507,74 +582,6 @@
         </div>
       </div>
     </footer>
-    <!-- ------------------------ Backdrop menu------------------------ -->
-    <div class="backdrop-menu is-hidden" .js-menu-container>
-      <div class="modal-menu">
-        <button type="button" class="modal-menu-close-btn" .js-close-menu>
-          <svg class="modal-menu-btn-icon" width="8" height="8">
-            <use href="./images/icons/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="modal-header-list list">
-          <li class="modal-header-item">
-            <a href="./index.html" class="modal-header-link link">Studio</a>
-          </li>
-          <li class="modal-header-item">
-            <a href="./portfolio.html" class="modal-header-link link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="modal-header-item">
-            <button type="button" class="modal-menu-open-btn" data-modal-open>
-              <a href="" class="modal-header-link link">Contacts</a>
-            </button>
-          </li>
-        </ul>
-        <div class="modal-address-info list">
-          <a href="tel:+110001111111" class="modal-address-phone-item link"
-            >+11 (000) 111-11-11</a
-          >
-          <a
-            href="mailto:info@devstudio.com"
-            class="modal-address-mail-item link"
-            >info@devstudio.com</a
-          >
-        </div>
-        <div class="modal-social-wrap">
-          <ul class="soc-networks-list list">
-            <li class="soc-networks-item">
-              <a class="soc-link link" href="">
-                <svg class="soc-networks-icon" width="16" height="16">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-networks-item">
-              <a class="soc-link link" href="">
-                <svg class="soc-networks-icon" width="16" height="16">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-networks-item">
-              <a class="soc-link link" href=""
-                ><svg class="soc-networks-icon" width="16" height="16">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-networks-item">
-              <a class="soc-link link" href=""
-                ><svg class="soc-networks-icon" width="16" height="16">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <!-------------------------- Backdrop-------------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
