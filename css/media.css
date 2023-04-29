@@ -3,9 +3,9 @@
     display: none;
   }
 
-  /* .header-address {
+  .header-address {
     display: none;
-  } */
+  }
 }
 
 @media screen and (min-width: 428px) {
@@ -86,6 +86,8 @@
   background-color: var(--white-text-color);
   display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-wrap {
@@ -125,7 +127,7 @@
 .soc-networks-list {
   display: flex;
   justify-content: center;
-  width: 232px;
+  width: 100%;
 }
 
 .soc-networks-item {
@@ -354,19 +356,20 @@
     flex-direction: row;
   }
 
-  .peculiarities-container {
+  .peculiarities > .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 768px;
   }
 
-  /* .peculiarities-list {
+  .peculiarities-list {
     display: flex;
     flex-wrap: wrap;
     width: 736px;
-    gap: 24px;
-  } */
+    gap: 72px 24px;
+    padding-left: 0;
+  }
 
   .peculiarities-item {
     max-width: 356px;
@@ -386,6 +389,75 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--black-p-color);
+  }
+
+  /*-------------------------Team-------------------------*/
+  .team {
+    display: flex;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .team > .container {
+    width: 552px;
+  }
+  /* .team > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 552px;
+  } */
+
+  .team-list {
+    display: flex;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 552px;
+  }
+
+  .team-item {
+    max-width: 264px;
+  }
+
+  /*-------------------------FOOTER-------------------------*/
+  .footer {
+    display: flex;
+  }
+
+  .footer-wrap-top {
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+  }
+
+  .logo-text-wrap {
+    align-items: flex-start;
+  }
+
+  .social-media-text {
+    text-align: start;
+  }
+
+  .footer-form-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-form-text {
+    text-align: start;
+  }
+
+  .footer-form-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .footer-form-submit {
+    margin: 0;
   }
 
   /*-------------------------CUSTOMERS-------------------------*/
