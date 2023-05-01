@@ -280,7 +280,6 @@
   .header-list {
     display: flex;
     gap: 40px;
-    /* margin-right: 121px; */
   }
   .menu-header-btn {
     display: none;
@@ -372,19 +371,35 @@
   /*-------------------------EFFECTIVE SOLUTIONS-------------------------*/
   .solutions {
     padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/opti/solutions.jpg);
   }
 
-  .solutions-wrap {
-    width: 496px;
-  }
-  .solutions-main-title {
-    max-width: 500px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-    width: 100%;
-  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/opti/solutions@2x.jpg);
+    }
 
+    .solutions-wrap {
+      width: 496px;
+    }
+    .solutions-main-title {
+      max-width: 500px;
+      font-size: 56px;
+      line-height: 1.07;
+      margin-bottom: 36px;
+      width: 100%;
+    }
+  }
   /*-------------------------PECULIARTIES-------------------------*/
 
   .peculiarities {
@@ -641,14 +656,21 @@
 
   .address-info-list {
     display: flex;
-    max-width: 100%;
+    min-width: 100%;
     gap: 40px;
   }
 
   .header-container {
-    max-width: 1158px;
+    min-width: 1158px;
+  }
+  .header-address {
+    display: flex;
+    gap: 40px;
   }
 
+  .address-info-item {
+    min-width: 100%;
+  }
   .header-info-item {
     font-size: 16px;
     line-height: 1.5;
@@ -675,18 +697,6 @@
   .solutions-wrap {
     width: 496px;
   }
-
-  /* @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero-bg-desktop-2x.jpg);
-    } */
-  /* } */
 
   /*-------------------------Peculiarities------------------------*/
   .peculiarities-container {
