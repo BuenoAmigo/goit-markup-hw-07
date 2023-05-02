@@ -841,7 +841,7 @@
   .footer-container {
     display: flex;
     gap: 80px;
-    /* min-width: 1158px; */
+    min-width: 1158px;
   }
 
   .footer-wrap-top {
